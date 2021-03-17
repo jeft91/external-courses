@@ -1,31 +1,27 @@
-function IteratingThroughAnArray(AnArbitraryArray) {
-    let EvenNumbers = [];
-    let OddNumbers = [];
+function iteratingThroughAnArray(anArbitraryArray) {
+    let evenNumbers = [];
+    let oddNumbers = [];
     let zero = [];
     let number = [];
     let summ = [];
-
-    for (i = 0; i < AnArbitraryArray.length; i++) {
-        if ((typeof AnArbitraryArray[i]) == 'number' && AnArbitraryArray[i] !== 0) {
-            number.push(AnArbitraryArray[i]);
+    for (i = 0; i < anArbitraryArray.length; i++) {
+        if ((typeof anArbitraryArray[i]) === 'number' && anArbitraryArray[i] !== 0) {
+            number.push(anArbitraryArray[i]);
         }
-
-        else if (AnArbitraryArray[i] == 0) {
-            zero.push(AnArbitraryArray[i]);
+        else if (anArbitraryArray[i] === 0) {
+            zero.push(anArbitraryArray[i]);
         }
     }
-
     for (i = 0; i < number.length; i++) {
-        if (number[i] % 2 != 0) {
-            OddNumbers.push(number[i]);
+        if (number[i] % 2 !== 0) {
+            oddNumbers.push(number[i]);
         }
-
-        else if (number[i] % 2 == 0) {
-            EvenNumbers.push(number[i]);
+        else if (number[i] % 2 === 0) {
+            evenNumbers.push(number[i]);
         }
     }
-    summ = 'чётных:' + EvenNumbers.length + 'нечётных:' + OddNumbers.length + 'нулей:' + zero.length;
+    summ = 'чётных:' + evenNumbers.length + 'нечётных:' + oddNumbers.length + 'нулей:' + zero.length;
     return console.log(summ);
 }
 
-module.exports = IteratingThroughAnArray;
+module.exports = iteratingThroughAnArray;

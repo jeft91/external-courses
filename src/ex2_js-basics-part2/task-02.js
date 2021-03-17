@@ -1,11 +1,8 @@
-function iteratingThroughAnArray(AnArbitraryArray) {
-
+function iteratingThroughAnArray(anArbitraryArray) {
     let totalNumberElements;
-    totalNumberElements = AnArbitraryArray.length;
-
-    for (let i = 0; i < AnArbitraryArray.length; ++i) {
-
-        console.log(AnArbitraryArray[i] + '=' + 'Общее колличество элементов массива' + '=' + totalNumberElements);
+    totalNumberElements = anArbitraryArray.length;
+    for (let i = 0; i < anArbitraryArray.length; ++i) {
+        console.log(anArbitraryArray[i] + '=' + 'Общее колличество элементов массива' + '=' + totalNumberElements);
     }
     return;
 }

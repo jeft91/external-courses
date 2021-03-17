@@ -1,19 +1,7 @@
-function MaxValue(arr) {
-    let newArray = [];
+function maxValue(arr) {
     let max;
-    for (i = 0; i < arr.length; i++) {
-
-        if (arr[i] > 0) {
-            newArray.push(arr[i]);
-
-        }
-
-    }
-
-    max = Math.max.apply(null, newArray);
-
-    return alert(max);
-
+    max = Math.max.apply(null, arr);
+    return console.log(max);
 }
 
-module.exports = MaxValue;
+module.exports = maxValue;

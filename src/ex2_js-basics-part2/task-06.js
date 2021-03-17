@@ -1,19 +1,19 @@
-function IteratingThroughPrimes(num) {
+function iteratingThroughPrimes(num) {
     if (num > 1000) {
-        return alert('данные неверны');
+        return console.log('данные неверны');
 
     }
-    if (num == 0 || num == 1) {
-        return alert('составное число');
+    if (num === 0 || num === 1) {
+        return console.log('составное число');
 
     }
     for (i = 2; i < num; i++) {
-        if (num % i == 0) {
-            return alert('составное число');
+        if (num % i === 0) {
+            return console.log('составное число');
 
         }
     }
-    return alert('простое число');
+    return console.log('простое число');
 }
 
-module.exports = IteratingThroughPrimes;
+module.exports = iteratingThroughPrimes;
